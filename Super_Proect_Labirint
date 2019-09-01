@@ -1,0 +1,260 @@
+X = 2
+E = 6
+Q = 9
+T = 3
+
+
+level1 = [[0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 1, 0, 0, 0, 0],
+          [0, 0, 0, 0, 1, 0, 0, 0, 0],
+          [0, 0, 0, 0, 1, 0, 0, 0, 0],
+          [0, 0, 0, 0, 1, 0, 0, 0, 0],
+          [0, 0, 0, 0, 1, 0, 0, 0, 0],
+          [0, 0, 0, 0, 1, 0, 0, 0, 0],
+          [0, 0, 0, 0, 1, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0], ]
+
+level = [[0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [0, 1, 0, 0, 1, 0, 0, 0, 0],
+         [0, 1, 0, 0, 1, 0, 0, 0, 0],
+         [0, 1, 1, 1, 1, 1, 1, 1, 0],
+         [0, 0, 0, 0, 1, 0, 0, 1, 0],
+         [0, 1, 1, 1, 1, 0, 1, 1, 0],
+         [0, 1, 0, 0, 1, 0, 1, 0, 0],
+         [0, 1, 0, 0, 1, 0, 1, 1, 0],
+         [0, 0, 0, 0, 0, 0, 0, 0, 0], ]
+# 1 4 7 4
+# 1 4 7 1
+# 1 4 7 7
+
+level3 = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ]
+# 1 2 18 11
+
+
+hard = [[0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 1, 1, 1, 0, 0],
+        [0, 1, 0, 0, 1, 0, 1, 0, 0],
+        [0, 1, 0, 0, 1, 0, 1, 0, 0],
+        [0, 1, 0, 0, 1, 0, 1, 0, 0],
+        [0, 1, 0, 0, 0, 0, 1, 0, 0],
+        [0, 1, 1, 1, 1, 1, 1, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0], ]
+
+
+def p():
+    print("_______________")
+
+
+def choose_level():
+    pass
+
+
+def print_level():
+    for row in level:
+        for col in row:
+            print (f"{col}", end =" ")
+        print ()
+
+
+def get_in():
+    x1 = int(input("Input in x: "))
+    y1 = int(input("Input in y: "))
+    x2 = int(input("Input exit x: "))
+    y2 = int(input("Input exit y: "))
+    if level[x1][y1] == 1 and level[x2][y2] == 1:
+        mark_on_field_1(x1, y1, X)
+        mark_on_field_2(x2, y2, E)
+        return x1, y1, x2, y2
+    else:
+        print("Error!")
+
+
+def mark_on_field_1(x1, y1, symbol):
+    level[x1][y1] = symbol
+
+
+def mark_on_field_2(x2, y2, symbol):
+    level[x2][y2] = symbol
+
+
+def mark_on_field_3(x1, y1, symbol):
+    level[x1][y1] = symbol
+
+
+def mark_on_field_4(x1, y1, symbol):
+    level[x1][y1] = symbol
+
+
+def get_ahead():
+    x1, y1, x2, y2 = get_in()
+    main = []
+    temp = []
+    while True:
+        if y1 > 0 and level[x1][y1 - 1] == 1 and level[x1 + 1][y1] == 1:
+            mark_on_field_1(x1, (y1 - 1), X)
+            y1 -= 1
+            temp.append((x1, y1))
+            while True:
+                if y1 > 0 and level[x1][y1 - 1] == 1:
+                    mark_on_field_1(x1, (y1 - 1), X)
+                    y1 -= 1
+                    temp.append((x1, y1))
+
+                elif y1 > 0 and level[x1][y1 + 1] == 1:
+                    mark_on_field_1(x1, (y1 + 1), X)
+                    y1 += 1
+                    temp.append((x1, y1))
+
+                elif x1 > 0 and level[x1 + 1][y1] == 1:
+                    mark_on_field_1((x1 + 1), y1, X)
+                    x1 += 1
+                    temp.append((x1, y1))
+
+                elif x1 > 0 and level[x1 - 1][y1] == 1:
+                    mark_on_field_1((x1 - 1), y1, X)
+                    x1 -= 1
+                    temp.append((x1, y1))
+
+                elif level[x1 + 1][y1] == 6 or level[x1 - 1][y1] == 6 or level[x1][y1 + 1] == 6 or level[x1][
+                    y1 - 1] == 6:
+                    mark_on_field_3(x2, y2, Q)
+                    y1 -= 1
+                    temp.append((x1, y1))
+                    find_an_exit()
+                    for i in temp:
+                        main.append(i)
+
+                else:
+                    temp = []
+                    x1, y1 = main[-1]
+                    break
+
+        if y1 > 0 and level[x1][y1 + 1] == 1 and level[x1 + 1][y1] == 1:
+            mark_on_field_1(x1, (y1 + 1), X)
+            y1 += 1
+            temp.append((x1, y1))
+            while True:
+                if y1 > 0 and level[x1][y1 + 1] == 1:
+                    mark_on_field_1(x1, (y1 + 1), X)
+                    y1 += 1
+                    temp.append((x1, y1))
+
+                elif y1 > 0 and level[x1][y1 - 1] == 1:
+                    mark_on_field_1(x1, (y1 - 1), X)
+                    y1 -= 1
+                    temp.append((x1, y1))
+
+                elif x1 > 0 and level[x1 + 1][y1] == 1:
+                    mark_on_field_1((x1 + 1), y1, X)
+                    x1 += 1
+                    temp.append((x1, y1))
+
+                elif x1 > 0 and level[x1 - 1][y1] == 1:
+                    mark_on_field_1((x1 - 1), y1, X)
+                    x1 -= 1
+                    temp.append((x1, y1))
+
+                elif level[x1 + 1][y1] == 6 or level[x1 - 1][y1] == 6 or level[x1][y1 + 1] == 6 or level[x1][
+                    y1 - 1] == 6:
+                    mark_on_field_3(x2, y2, Q)
+                    y1 += 1
+                    temp.append((x1, y1))
+                    find_an_exit()
+                    for i in temp:
+                        main.append(i)
+
+                else:
+                    temp = []
+                    x1, y1 = main[-1]
+                    break
+
+        # if y1 > 0 and level[x1][y1 - 1] == 1 and level[x1][y1 + 1] == 1 and level[x1 + 1][y1] == 1:
+        #     mark_on_field_1(x1, (y1 - 1), X)
+        #     y1 -= 1
+        #     temp.append((x1, y1))
+        #     while True:
+        #         if y1 > 0 and level[x1][y1 - 1] == 1:
+        #             mark_on_field_1(x1, (y1 - 1), X)
+        #             y1 -= 1
+        #             temp.append((x1, y1))
+        #
+        #         elif level[x1 + 1][y1] == 6 or level[x1 - 1][y1] == 6 or level[x1][y1 + 1] == 6 or level[x1][y1 - 1] == 6:
+        #             mark_on_field_3(x2, y2, Q)
+        #             y1 -= 1
+        #             temp.append((x1, y1))
+        #             find_an_exit()
+        #             for i in temp:
+        #                 main.append(i)
+        #
+        #         else:
+        #             #temp = []
+        #             x1, y1 = main[-1]
+        #             break
+
+        elif y1 > 0 and level[x1][y1 + 1] == 1:
+            mark_on_field_1(x1, (y1 + 1), X)
+            y1 += 1
+            main.append((x1, y1))
+        elif y1 > 0 and level[x1][y1 - 1] == 1:
+            mark_on_field_1(x1, (y1 - 1), X)
+            y1 -= 1
+            main.append((x1, y1))
+        elif x1 > 0 and level[x1 + 1][y1] == 1:
+            mark_on_field_1((x1 + 1), y1, X)
+            x1 += 1
+            main.append((x1, y1))
+        elif x1 > 0 and level[x1 - 1][y1] == 1:
+            mark_on_field_1((x1 - 1), y1, X)
+            x1 -= 1
+            main.append((x1, y1))
+
+
+        elif level[x1 + 1][y1] == 6 or level[x1 - 1][y1] == 6 or level[x1][y1 + 1] == 6 or level[x1][y1 - 1] == 6:
+            mark_on_field_3(x2, y2, Q)
+            y1 -= 1
+            main.append((x2, y2))
+            find_an_exit()
+
+
+
+        else:
+            print(main)
+            print(temp)
+            p()
+            return
+
+
+def find_an_exit():
+    print("Выход найден")
+
+
+# choose_level()
+
+print_level()
+
+p()
+
+get_ahead()
+
+print_level()
+
